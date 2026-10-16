@@ -13,10 +13,10 @@ Para ello se utilizan principalmente:
   - Velocidad angular.
 
 # Desarrollo
-1. Obtención y procesamiento de la imagen
+## 1. Obtención y procesamiento de la imagen
 
-El primer paso fue obtener las imágenes proporcionadas por la cámara frontal del vehículo. La imagen se obtiene continuamente mediante HAL.getImage(). Las imágenes recibidas se encuentran inicialmente en formato BGR. Para facilitar la detección de la línea roja se realiza una conversión al espacio de color HSV mediante OpenCV. De esta forma resulta más sencillo detectar la línea roja incluso cuando existen pequeñas variaciones en la iluminación de la escena.
-
+  El primer paso fue obtener las imágenes proporcionadas por la cámara frontal del vehículo. La imagen se obtiene continuamente mediante HAL.getImage(). Las imágenes recibidas se encuentran inicialmente en formato     BGR. Para facilitar la detección de la línea roja se realiza una conversión al espacio de color HSV mediante OpenCV. De esta forma resulta más sencillo detectar la línea roja incluso cuando existen pequeñas          variaciones en la iluminación de la escena.
+  
 
 
 
