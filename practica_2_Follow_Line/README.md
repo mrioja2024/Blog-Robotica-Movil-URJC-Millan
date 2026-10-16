@@ -31,8 +31,8 @@ El valor m00 permite comprobar si se ha detectado una cantidad de píxeles corre
 Si m00 es mayor que cero, se puede calcular la posición horizontal del centroide mediante los momentos de la máscara.
 El centroide representa aproximadamente el centro de la zona roja detectada.
 La coordenada horizontal del centroide se utiliza para saber si la línea se encuentra:
-    A la izquierda del vehículo.
-    En el centro.
-    A la derecha del vehículo.
+  - A la izquierda del vehículo.
+  - En el centro.
+  - A la derecha del vehículo.
 
   
