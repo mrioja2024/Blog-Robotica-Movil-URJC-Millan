@@ -26,13 +26,12 @@ Una vez obtenida la imagen en HSV se definen diferentes rangos correspondientes 
 Procesar toda la imagen de la cámara no siempre es necesario, ya que la información más importante para controlar el vehículo se encuentra principalmente en la zona de la carretera situada delante de él. Por este motivo se utilizan regiones de interés. Durante el desarrollo he realizado pruebas utilizando una única región situada en la parte inferior de la imagen. Posteriormente he probado varias franjas horizontales situadas a diferentes alturas para obtener información tanto de la línea cercana al vehículo como de zonas situadas más adelante. El objetivo de utilizar varias franjas es conseguir que el vehículo pueda anticiparse a las curvas antes de llegar a ellas.
 
 ## 4. Calculo del centroide
-Después de generar la máscara se calculan los momentos de la imagen mediante: cv2.moments()
-El valor m00 permite comprobar si se ha detectado una cantidad de píxeles correspondiente a la línea.
-Si m00 es mayor que cero, se puede calcular la posición horizontal del centroide mediante los momentos de la máscara.
-El centroide representa aproximadamente el centro de la zona roja detectada.
-La coordenada horizontal del centroide se utiliza para saber si la línea se encuentra:
+Después de generar la máscara se calculan los momentos de la imagen mediante: cv2.moments() El valor m00 permite comprobar si se ha detectado una cantidad de píxeles correspondiente a la línea. Si m00 es mayor que cero, se puede calcular la posición horizontal del centroide mediante los momentos de la máscara. El centroide representa aproximadamente el centro de la zona roja detectada. La coordenada horizontal del centroide se utiliza para saber si la línea se encuentra:
   - A la izquierda del vehículo.
   - En el centro.
   - A la derecha del vehículo.
+
+## 5. Calculo del error
+Para controlar el vehículo se calcula un error comparando la posición de la línea con el centro de la imagen.Se utiliza la expresión: error = cx - centro_imagen. Si el error es aproximadamente cero, significa que la línea se encuentra centrada. Si el error es positivo, la línea se encuentra hacia uno de los lados de la imagen. Si el error es negativo, se encuentra hacia el lado contrario. La magnitud del error indica cuánto se ha desviado la línea respecto al centro de la cámara.
 
   
