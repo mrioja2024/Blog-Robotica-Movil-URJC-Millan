@@ -34,4 +34,6 @@ Después de generar la máscara se calculan los momentos de la imagen mediante: 
 ## 5. Calculo del error
 Para controlar el vehículo se calcula un error comparando la posición de la línea con el centro de la imagen.Se utiliza la expresión: error = cx - centro_imagen. Si el error es aproximadamente cero, significa que la línea se encuentra centrada. Si el error es positivo, la línea se encuentra hacia uno de los lados de la imagen. Si el error es negativo, se encuentra hacia el lado contrario. La magnitud del error indica cuánto se ha desviado la línea respecto al centro de la cámara.
 
+[Grabación de pantalla desde 2026-10-16 20-21-27.webm](https://github.com/user-attachments/assets/9a7f771e-099d-459e-bf2a-41d1cda17534)
+
   
