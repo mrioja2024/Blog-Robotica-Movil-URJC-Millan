@@ -54,13 +54,15 @@ A partir de esta fuerza se calcula la velocidad angular W, que controla hacia d�
 La velocidad lineal V se calcula dependiendo de cuánto tenga que girar y de los obstáculos que haya delante.
 Así, cuando el camino está despejado puede avanzar más rápido, mientras que en las curvas o al encontrar otro coche reduce la velocidad.
 
-## 6. Resultado
+## 5. Resultado
 Después de bastantes pruebas y cambios en el código, conseguí que el coche completara el circuito siguiendo los objetivos GPS y esquivando los obstáculos.
 La mejora más importante fue añadir las fases de adelantamiento, ya que antes el coche se quedaba parado o se desviaba demasiado de la trayectoria.
 También fue importante ajustar las fuerzas repulsivas para que no se acercara tanto a los obstáculo.
 Una vez conseguido que completara la vuelta, seguí probando distintas velocidades para intentar reducir el tiempo.
 
-## 7. Conclusión
+## 6. Conclusión
 Esta práctica me ha servido para entender mejor cómo funciona la navegación autónoma de un vehículo utilizando el GPS, el láser y el algoritmo VFF.
 Lo que más me ha costado ha sido conseguir que el coche pudiera adelantar a los obstáculos sin quedarse parado y que después volviera correctamente a la línea roja.
 Al final, lo que mejor resultado dio fue combinar las fuerzas VFF con los puntos GPS y utilizar distintas fases para realizar los adelantamientos.
+
+
