@@ -66,3 +66,8 @@ Lo que más me ha costado ha sido conseguir que el coche pudiera adelantar a los
 Al final, lo que mejor resultado dio fue combinar las fuerzas VFF con los puntos GPS y utilizar distintas fases para realizar los adelantamientos.
 
 
+
+https://github.com/user-attachments/assets/2c223db8-0e5b-4001-a79b-8cd1e494f4b8
+
+
+
